@@ -9,12 +9,12 @@ const isProduction = process.env.NODE_ENV === 'production';
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
 
 const config = {
-  entry: './src/index.jsx',
+  entry: './index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    open: true,
+    open: false,
     host: 'localhost',
   },
   plugins: [
