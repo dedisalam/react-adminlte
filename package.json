@@ -6,8 +6,9 @@
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
+    "build:css": "sass ./assets/scss/adminlte.scss ./public/assets/css/adminlte.css",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "serve": "npm run build:css & webpack serve"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
