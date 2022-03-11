@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Button } from './atoms';
+import './assets/scss/adminlte.scss';
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <Button />,
   document.getElementById('root')
 );
