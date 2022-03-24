@@ -7,47 +7,47 @@
 
 // scss-docs-start import-stack
 // Configuration
-@import 'functions';
-@import 'variables';
+@import '../node_modules/bootstrap/scss/functions';
+@import './variables/index';
 @import 'mixins';
-@import 'utilities';
+@import '../node_modules/bootstrap/scss/utilities';
 
 // Layout & components
 @import 'parts/core';
-@import 'reboot';
-@import 'type';
-@import 'images';
-@import 'containers';
-@import 'grid';
-@import 'tables';
-@import 'forms';
-@import 'buttons';
-@import 'transitions';
-@import 'dropdown';
-@import 'button-group';
-@import 'nav';
-@import 'navbar';
-@import 'card';
-@import 'accordion';
-@import 'breadcrumb';
-@import 'pagination';
-@import 'badge';
-@import 'alert';
-@import 'progress';
-@import 'list-group';
-@import 'close';
-@import 'toasts';
-@import 'modal';
-@import 'tooltip';
-@import 'popover';
-@import 'carousel';
-@import 'spinners';
-@import 'offcanvas';
-@import 'placeholders';
+@import '../node_modules/bootstrap/scss/reboot';
+// @import 'type';
+// @import 'images';
+// @import 'containers';
+// @import 'grid';
+// @import 'tables';
+// @import 'forms';
+// @import 'buttons';
+// @import 'transitions';
+// @import 'dropdown';
+// @import 'button-group';
+// @import 'nav';
+// @import 'navbar';
+// @import 'card';
+// @import 'accordion';
+// @import 'breadcrumb';
+// @import 'pagination';
+// @import 'badge';
+// @import 'alert';
+// @import 'progress';
+// @import 'list-group';
+// @import 'close';
+// @import 'toasts';
+// @import 'modal';
+// @import 'tooltip';
+// @import 'popover';
+// @import 'carousel';
+// @import 'spinners';
+// @import 'offcanvas';
+// @import 'placeholders';
 
-// Helpers
-@import '../node_modules/bootstrap/scss/helpers';
+// // Helpers
+// @import '../node_modules/bootstrap/scss/helpers';
 
-// Utilities
-@import '../node_modules/bootstrap/scss/utilities/api';
-// scss-docs-end import-stack
+// // Utilities
+// @import '../node_modules/bootstrap/scss/utilities/api';
+// // scss-docs-end import-stack

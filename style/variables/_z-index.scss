@@ -1,10 +1,22 @@
+// Z-index master list
 //
-// Z Index
-//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
 
+// scss-docs-start zindex-stack
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-offcanvas-backdrop: 1040 !default;
+$zindex-offcanvas: 1045 !default;
+$zindex-modal-backdrop: 1050 !default;
+$zindex-modal: 1055 !default;
+$zindex-popover: 1070 !default;
+$zindex-tooltip: 1080 !default;
 $zindex-main-header: $zindex-fixed + 4 !default;
 $zindex-main-sidebar: $zindex-fixed + 8 !default;
 $zindex-main-footer: $zindex-fixed + 2 !default;
 $zindex-control-sidebar: $zindex-fixed + 1 !default;
 $zindex-toasts: $zindex-main-sidebar + 2 !default;
 $zindex-preloader: 9999 !default;
+// scss-docs-end zindex-stack

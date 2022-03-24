@@ -1,0 +1,34 @@
+// Cards
+
+// scss-docs-start card-variables
+$card-spacer-y: $spacer !default;
+$card-spacer-x: $spacer !default;
+$card-title-spacer-y: $spacer * 0.5 !default;
+$card-border-width: $border-width !default;
+$card-border-color: $gray-100 !default;
+$card-border-radius: $border-radius !default;
+$card-box-shadow: null !default;
+$card-inner-border-radius: subtract(
+  $card-border-radius,
+  $card-border-width
+) !default;
+$card-cap-padding-y: $card-spacer-y * 0.5 !default;
+$card-cap-padding-x: $card-spacer-x !default;
+$card-cap-bg: rgba($black, 0.03) !default;
+$card-cap-color: null !default;
+$card-height: null !default;
+$card-color: null !default;
+$card-bg: $white !default;
+$card-img-overlay-padding: $spacer !default;
+$card-group-margin: $grid-gutter-width * 0.5 !default;
+// scss-docs-end card-variables
+
+$card-dark-border-color: lighten($gray-900, 10%) !default;
+$card-shadow: 0 0 1px rgba(0, 0, 0, 0.125),
+  0 1px 3px rgba(0, 0, 0, 0.2) !default;
+$card-title-font-size: 1.1rem !default;
+$card-title-font-size-sm: 1rem !default;
+$card-title-font-weight: $font-weight-normal !default;
+$card-nav-link-padding-sm-y: 0.4rem !default;
+$card-nav-link-padding-sm-x: 0.8rem !default;
+$card-img-size: $img-size-sm !default;

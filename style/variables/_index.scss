@@ -1,48 +1,60 @@
-@import '../../node_modules/bootstrap/scss/variables';
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-$variable-prefix: 'admin-';
-
-// $primary: #0073b7 !default;
-$lightblue: #3c8dbc !default;
-$navy: #001f3f !default;
-$teal: #39cccc !default;
-$olive: #3d9970 !default;
-$lime: #01ff70 !default;
-$orange: #ff851b !default;
-$fuchsia: #f012be !default;
-$purple: #605ca8 !default;
-$maroon: #d81b60 !default;
-$gray-x-light: #d2d6de !default;
-
-$theme-colors: map-merge(
-  (
-    'lightblue': $lightblue,
-    'navy': $navy,
-    'teal': $teal,
-    'olive': $olive,
-    'lime': $lime,
-    'orange': $orange,
-    'fuchsia': $fuchsia,
-    'purple': $purple,
-    'maroon': $maroon,
-    'gray-x-light': $gray-x-light,
-  ),
-  $theme-colors
-);
-
-// scss-docs-start theme-colors-rgb
-$theme-colors-rgb: map-merge(
-  map-loop($theme-colors, to-rgb, '$value'),
-  $theme-colors-rgb
-);
-// scss-docs-end theme-colors-rgb
+@import './color-system';
+@import './option';
+@import './gradient';
+@import './spacer';
+@import './position';
+@import './body';
+@import './utilities-map';
+@import './link';
+@import './paragraph';
+@import './grid-breakpoint';
+@import './grid-container';
+@import './grid-column';
+@import './container-padding';
+@import './component';
+@import './typography';
+@import './table';
+@import './button-form';
+@import './button';
+@import './form';
+@import './form-validation';
+@import './z-index';
+@import './nav';
+@import './navbar';
+@import './dropdown';
+@import './pagination';
+@import './placeholders';
+@import './image-size';
+@import './card';
+@import './accordion';
+@import './tooltip';
+@import './popover';
+@import './toast';
+@import './badge';
+@import './modal';
+@import './alert';
+@import './progress';
+@import './list-group';
+@import './thumbnail';
+@import './figures';
+@import './breadcrumbs';
+@import './carousel';
+@import './spinners';
+@import './close';
+@import './offcanvas';
+@import './code';
 
 @import './layout';
-@import './main_header';
-@import './main_footer';
-@import './sidebar_skins';
-@import './sidebar_mini';
-@import './transitions';
-@import './z-index';
-@import './dark-mode';
-@import './control-sidebar-width';
+@import './main-header';
+@import './main-footer';
+@import './sidebar';
+@import './sidebar-mini';
+@import './control-sidebar';
+@import './direct-chat';
+@import './elevation';
+@import './ribbon';
