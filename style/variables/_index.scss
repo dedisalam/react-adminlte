@@ -1,0 +1,48 @@
+@import '../../node_modules/bootstrap/scss/variables';
+
+$variable-prefix: 'admin-';
+
+// $primary: #0073b7 !default;
+$lightblue: #3c8dbc !default;
+$navy: #001f3f !default;
+$teal: #39cccc !default;
+$olive: #3d9970 !default;
+$lime: #01ff70 !default;
+$orange: #ff851b !default;
+$fuchsia: #f012be !default;
+$purple: #605ca8 !default;
+$maroon: #d81b60 !default;
+$gray-x-light: #d2d6de !default;
+
+$theme-colors: map-merge(
+  (
+    'lightblue': $lightblue,
+    'navy': $navy,
+    'teal': $teal,
+    'olive': $olive,
+    'lime': $lime,
+    'orange': $orange,
+    'fuchsia': $fuchsia,
+    'purple': $purple,
+    'maroon': $maroon,
+    'gray-x-light': $gray-x-light,
+  ),
+  $theme-colors
+);
+
+// scss-docs-start theme-colors-rgb
+$theme-colors-rgb: map-merge(
+  map-loop($theme-colors, to-rgb, '$value'),
+  $theme-colors-rgb
+);
+// scss-docs-end theme-colors-rgb
+
+@import './layout';
+@import './main_header';
+@import './main_footer';
+@import './sidebar_skins';
+@import './sidebar_mini';
+@import './transitions';
+@import './z-index';
+@import './dark-mode';
+@import './control-sidebar-width';
